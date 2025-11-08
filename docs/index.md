@@ -6,7 +6,7 @@ hero:
   text: "从零开始的服务器搭建教程"
   tagline: 一份面向中文用户的完整 Minecraft 服务器搭建与优化指南
   image:
-    src: /imgs/logo.png
+    src: ./logo.png
     alt: NeoDocs Logo
   actions:
     - theme: brand

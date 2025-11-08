@@ -33,7 +33,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // 添加logo
-    logo: '/imgs/logo.png',
+    logo: { src: '/logo.png', width: 32, height: 32 },
+    siteTitle: 'NeoDocs',
     
     nav: [
       { text: '首页', link: '/' },
