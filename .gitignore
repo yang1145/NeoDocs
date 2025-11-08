@@ -1,0 +1,29 @@
+# 忽略编辑器配置
+.vscode/settings.json
+
+# 依赖目录
+node_modules/
+
+# VitePress 构建输出
+.vitepress/dist/
+
+# VitePress 缓存
+.vitepress/cache/
+.vitepress/.temp
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器和IDE相关
+.idea/
+*.swp
+*.swo
