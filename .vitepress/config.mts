@@ -8,8 +8,33 @@ export default defineConfig({
   description: "Minecraft 服务器搭建指南文档",
   ignoreDeadLinks: true,
   
+  // 添加自定义CSS
+  head: [
+    ['style', {}, `
+      .VPHero .name {
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 300% 300%;
+        animation: gradientAnimation 3s ease infinite;
+        font-size: 3.5rem; /* 增大字体大小 */
+        font-weight: 700; /* 加粗字体 */
+      }
+      
+      @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    `]
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    // 添加logo
+    logo: '/imgs/logo.png',
+    
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/getting-started' },
@@ -46,6 +71,12 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/NeoDocs-Team/NeoDocs' }
-    ]
+    ],
+    
+    // 添加footer
+    footer: {
+      message: '本项目基于 MIT License 发布',
+      copyright: 'Copyright © 2025 NeoDocs 团队'
+    }
   }
 })
