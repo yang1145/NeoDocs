@@ -1,4 +1,4 @@
-# 📚 Minecraft 开服指南文档
+# 📚 NeoDocs
 
 > 本项目是面向 Minecraft 服务器管理者的**开源开服指南文档**，涵盖从零部署到高级优化的完整流程。最后更新：2025年11月8日
 
@@ -25,8 +25,8 @@ docs/
 ### 本地构建
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/mc-server-guide.git
-cd mc-server-guide
+git clone https://github.com/NeoDocs-Team/NeoDocs.git
+cd NeoDocs
 
 # 2. 安装依赖 (需Python 3.8+)
 pip install mkdocs-material mkdocs-git-revision-date-localized
